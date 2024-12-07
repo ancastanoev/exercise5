@@ -52,8 +52,6 @@ def visualize(points, lower_hull):
     for point in lower_hull[1:]:
         pen.goto(point[0], point[1])
 
-    # Close the lower hull
-    pen.goto(lower_hull[0][0], lower_hull[0][1])
 
     pen.penup()
     pen.goto(0, -2)
